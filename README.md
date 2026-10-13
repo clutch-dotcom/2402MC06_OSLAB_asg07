@@ -9,3 +9,8 @@ Implemented thread synchronisation using a semaphore(implemented in the previous
 Also implemented producer consumer problem using threads to clone multiple producers and consumers, and semaphores counting semaphores empty(=5), full(=0), and a mutex for mutual exclusion on the shared buffer.
 
 ## Q3.
+Implemented deadlock detection as in bankers algorithm by determining safety of a state by mock allocation, but with real xv6 processes and pipes.
+
+## Q4.
+
+Implemented priority based scheduler with aging as done in previous assignments but with preemption. When a timer interrupt is generated, ticks are incremented and the processes are aged, but the aging function also returns a yield flag if a runnable process has a greater priority than current process.
